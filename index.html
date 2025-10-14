@@ -1,0 +1,255 @@
+<!--
+  Supportmart marketing website
+  This single‑page site introduces the Supportmart project in Vietnamese, highlighting the
+  problems it solves and the innovative solutions it offers to the agricultural supply chain.
+  The design uses fresh greens and blues drawn from the project logo to evoke both nature and
+  technology. A few simple JavaScript effects animate counters and provide a mobile friendly
+  navigation menu.
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supportmart – Chuỗi cung ứng nông sản thông minh</title>
+  <!-- Google Fonts: Inter with Vietnamese subset for proper Unicode support -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="#home" class="nav-logo"><img src="logo.jpg" alt="Supportmart logo"></a>
+        <span class="brand-name">Supportmart</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#features">Giải pháp</a></li>
+        <li><a href="#model">Mô hình</a></li>
+        <li><a href="#impact">Tác động</a></li>
+        <li><a href="#team">Đội ngũ</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <!-- Link to technology demo page -->
+        <li><a href="technology.html">Công nghệ</a></li>
+        <!-- Link to marketplace demo page -->
+        <li><a href="marketplace.html">Sàn TMĐT</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img class="hero-logo" src="logo.jpg" alt="Supportmart logo">
+      <h1>Minh bạch dòng chảy, nâng tầm nông sản Việt</h1>
+      <p>Supportmart là nền tảng điều phối chuỗi cung ứng nông sản áp dụng công nghệ AI, Blockchain và IoT, giúp kết nối trực tiếp nông dân – HTX với doanh nghiệp B2B, giảm thất thoát và tạo giá trị bền vững.</p>
+      <div class="hero-actions">
+        <a href="#features" class="btn btn-primary">Khám phá giải pháp</a>
+        <a href="#contact" class="btn btn-secondary">Trở thành đối tác</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">Vì sao Supportmart ra đời?</h2>
+      <div class="about-grid">
+        <div class="about-item">
+          <i class="fa-solid fa-seedling fa-2x about-icon"></i>
+          <h3>Được mùa mất giá</h3>
+          <p>30–35% nông sản rau quả tại Việt Nam thất thoát sau thu hoạch – tương đương 3,5–4,1&nbsp;tỉ&nbsp;USD/năm. Nông dân thiếu đầu ra ổn định nên phụ thuộc thương lái và bị ép giá.</p>
+        </div>
+        <div class="about-item">
+          <i class="fa-solid fa-truck-fast fa-2x about-icon"></i>
+          <h3>Logistics đứt gãy</h3>
+          <p>Chi phí logistics chiếm 29% giá thành nông sản – cao hơn Thái Lan 6% và Malaysia 12%. Chuỗi lạnh thiếu đồng bộ khiến rau quả nhanh hỏng và giảm giá trị.</p>
+        </div>
+        <div class="about-item">
+          <i class="fa-solid fa-people-group fa-2x about-icon"></i>
+          <h3>Khoảng cách nhà nông – doanh nghiệp</h3>
+          <p>75% nông dân vẫn bán qua thương lái; chỉ 12% tiếp cận khách hàng trực tuyến. Doanh nghiệp B2B khó tìm nguồn cung ổn định, minh bạch, chất lượng đồng đều.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+    <div class="container">
+      <h2 class="section-title">Giải pháp của chúng tôi</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI Dự báo &amp; Điều phối</h3>
+          <p>Thuật toán AI phân tích dữ liệu nhu cầu, mùa vụ và thời tiết để lập kế hoạch thu mua, dự báo nhu cầu và tối ưu tuyến xe lạnh, giảm chi phí và giảm tồn kho.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-blockchain"></i></div>
+          <h3>Blockchain truy xuất</h3>
+          <p>Mỗi lô hàng được cấp “hộ chiếu số” trên blockchain, ghi lại toàn bộ hành trình từ nông trại tới bàn ăn. Minh bạch tuyệt đối và chống làm giả.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-temperature-high"></i></div>
+          <h3>Chuỗi lạnh IoT</h3>
+          <p>Cảm biến IoT giám sát nhiệt độ kho lạnh và xe vận chuyển 24/7, đảm bảo chất lượng nông sản. Thông tin được cập nhật theo thời gian thực.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-recycle"></i></div>
+          <h3>Kinh tế tuần hoàn</h3>
+          <p>Phụ phẩm và nông sản không đạt chuẩn thương mại được chuyển thành phân bón hữu cơ và sinh khối trùn quế, tạo ra nguồn thu mới và giảm rác thải.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Model Section -->
+  <section id="model" class="model section">
+    <div class="container">
+      <h2 class="section-title">Mô hình kinh doanh &amp; hệ sinh thái</h2>
+      <div class="model-content">
+        <div class="model-diagram">
+          <!-- Represent the hub‑and‑spoke model with simple boxes and arrows -->
+          <div class="diagram-hub">AgriHub</div>
+          <div class="diagram-spokes">
+            <div class="diagram-spoke">
+              <i class="fa-solid fa-tractor"></i>
+              <span>Hộ nông dân / HTX</span>
+            </div>
+            <div class="diagram-spoke">
+              <i class="fa-solid fa-truck-moving"></i>
+              <span>Đối tác 3PL</span>
+            </div>
+            <div class="diagram-spoke">
+              <i class="fa-solid fa-store"></i>
+              <span>Khách hàng B2B</span>
+            </div>
+          </div>
+        </div>
+        <div class="model-text">
+          <p>Supportmart hoạt động như một “nhà máy điều phối” hơn là sàn thương mại điện tử thuần túy. Chúng tôi xây dựng các trạm AgriHub tại vùng nguyên liệu để thu gom, phân loại, sơ chế và bảo quản nông sản. Sau đó nền tảng điều phối logistics lạnh đưa nông sản tới các khách hàng B2B như bếp ăn công nghiệp, nhà hàng, trường học. Mọi thông tin đều được số hoá và minh bạch trên nền tảng.</p>
+          <ul>
+            <li><strong>Nguồn cung:</strong> Hộ nông dân, tổ hợp tác, HTX</li>
+            <li><strong>Đối tác vận chuyển:</strong> Công ty logistics lạnh 3PL</li>
+            <li><strong>Khách hàng:</strong> Bếp ăn công nghiệp, chuỗi F&amp;B, trường học, bệnh viện</li>
+            <li><strong>Dòng tiền:</strong> Phí dịch vụ 2–3%, phí thành viên B2B, doanh thu từ kinh tế tuần hoàn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section id="impact" class="impact section">
+    <div class="container">
+      <h2 class="section-title">Tác động &amp; giá trị mang lại</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <h3 class="counter" data-target="20">0</h3>
+          <p>tăng thu nhập cho nông dân (%)</p>
+        </div>
+        <div class="impact-card">
+          <h3 class="counter" data-target="35">0</h3>
+          <p>giảm thất thoát sau thu hoạch (%)</p>
+        </div>
+        <div class="impact-card">
+          <h3 class="counter" data-target="90">0</h3>
+          <p>tỷ lệ người sẵn sàng tham gia (%)</p>
+        </div>
+        <div class="impact-card">
+          <h3 class="counter" data-target="10">0</h3>
+          <p>tạo công ăn việc làm (nghìn)</p>
+        </div>
+      </div>
+      <div class="impact-details">
+        <div class="impact-item">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Giá trị kinh tế</h4>
+          <p>Tăng thu nhập 15–20% cho nông dân nhờ giá minh bạch, giảm trung gian và thất thoát. Cắt giảm chi phí thu mua cho doanh nghiệp.</p>
+        </div>
+        <div class="impact-item">
+          <i class="fa-solid fa-users"></i>
+          <h4>Giá trị xã hội</h4>
+          <p>Thúc đẩy chuyển đổi số nông nghiệp, tạo cộng đồng nông dân công nghệ và mạng lưới đối tác B2B bền vững. Tỷ lệ hài lòng và sẵn sàng hợp tác lên tới 85%.</p>
+        </div>
+        <div class="impact-item">
+          <i class="fa-solid fa-earth-asia"></i>
+          <h4>Giá trị môi trường</h4>
+          <p>Kinh tế tuần hoàn tại AgriHub tận dụng 100% phụ phẩm, giảm phát thải nhà kính và hướng tới nông nghiệp carbon thấp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team section">
+    <div class="container">
+      <h2 class="section-title">Đội ngũ sáng lập</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h4>Nguyễn Phan Như Quỳnh</h4>
+          <p>CEO – Điều hành chiến lược, phát triển sản phẩm và kết nối đối tác.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h4>Trương Phạm Tú Uyên</h4>
+          <p>CMO – Marketing &amp; Truyền thông, xây dựng thương hiệu và trải nghiệm khách hàng.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar"><i class="fa-solid fa-user-nurse"></i></div>
+          <h4>Tạ Như Ý</h4>
+          <p>COO – Vận hành, xây dựng mạng lưới AgriHub và tối ưu chuỗi cung ứng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Liên hệ với chúng tôi</h2>
+      <p>Nếu bạn là nông dân, hợp tác xã hoặc doanh nghiệp B2B muốn tham gia hệ sinh thái Supportmart, hãy để lại thông tin để chúng tôi liên lạc.</p>
+      <form id="contact-form" class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Họ tên" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="organisation" name="organisation" placeholder="Đơn vị / Công ty" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Thông điệp của bạn" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Gửi thông tin</button>
+      </form>
+      <div class="form-response" id="form-response"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Supportmart. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

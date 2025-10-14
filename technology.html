@@ -1,0 +1,188 @@
+<!--
+  Supportmart technology showcase page
+  This page illustrates the underlying technologies powering the Supportmart platform.
+  It features an interactive tabbed interface that demonstrates AI forecasting, blockchain
+  traceability, IoT monitoring of the cold chain, and the circular economy model.
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Công nghệ – Supportmart</title>
+  <!-- Google Fonts: Inter with Vietnamese subset for proper Unicode support -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="index.html#home" class="nav-logo"><img src="logo.jpg" alt="Supportmart logo"></a>
+        <span class="brand-name">Supportmart</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">Giới thiệu</a></li>
+        <li><a href="index.html#features">Giải pháp</a></li>
+        <li><a href="index.html#model">Mô hình</a></li>
+        <li><a href="index.html#impact">Tác động</a></li>
+        <li><a href="index.html#team">Đội ngũ</a></li>
+        <li><a href="index.html#contact">Liên hệ</a></li>
+        <li><a href="technology.html" class="active">Công nghệ</a></li>
+        <li><a href="marketplace.html">Sàn TMĐT</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero section for technology page -->
+  <section class="tech-hero">
+    <div>
+      <h1>Công nghệ nền tảng</h1>
+      <p>Khám phá cách Supportmart ứng dụng AI, Blockchain, IoT và kinh tế tuần hoàn để xây dựng một hệ sinh thái nông nghiệp số minh bạch, hiệu quả và bền vững.</p>
+    </div>
+  </section>
+
+  <!-- Technology content with tabs -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Trải nghiệm công nghệ</h2>
+      <!-- Tab navigation -->
+      <ul class="tech-tabs">
+        <li class="tech-tab active" data-tab="ai">AI &amp; Dự báo</li>
+        <li class="tech-tab" data-tab="blockchain">Blockchain</li>
+        <li class="tech-tab" data-tab="iot">IoT &amp; Chuỗi lạnh</li>
+        <li class="tech-tab" data-tab="circular">Kinh tế tuần hoàn</li>
+      </ul>
+      <!-- Tab content panels -->
+      <div class="tech-content">
+        <!-- AI tab -->
+        <div id="ai" class="tab-pane active">
+          <div class="tech-panel">
+            <h3>AI dự báo &amp; điều phối</h3>
+            <p>Hệ thống trí tuệ nhân tạo của Supportmart thu thập và phân tích đồng thời dữ liệu bán hàng, mùa vụ, thời tiết và xu&nbsp;hướng tiêu dùng. Kết quả dự báo được sử dụng để lập kế hoạch thu mua, lên lịch thu hoạch, điều&nbsp;phối xe tải lạnh và tối ưu hóa chuỗi cung ứng. Nhờ vậy nông dân và doanh nghiệp có thể ra quyết định trên cơ sở dữ&nbsp;liệu, giảm tồn kho, giảm thất thoát và tiết kiệm chi phí.</p>
+            <!-- SVG-based line chart for AI demo; drawn dynamically via script.js -->
+            <svg id="aiChart" viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%; height:260px;"></svg>
+            <!-- Legend for the line chart -->
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-color legend-forecast"></span> Dự báo</span>
+              <span class="legend-item"><span class="legend-color legend-actual"></span> Thực tế</span>
+            </div>
+            <p>Biểu đồ trên mô phỏng so sánh giữa nhu cầu dự báo và thực tế trong 7&nbsp;ngày, thể hiện khả năng dự đoán chính xác của hệ&nbsp;thống.</p>
+          </div>
+        </div>
+        <!-- Blockchain tab -->
+        <div id="blockchain" class="tab-pane">
+          <div class="tech-panel">
+            <h3>Truy xuất bất biến bằng Blockchain</h3>
+            <p>Mỗi lô hàng nông sản được gắn một "hộ chiếu số" trên nền tảng sổ cái phân tán (Distributed&nbsp;Ledger&nbsp;Technology). Mọi thông tin về thu hoạch, phân loại, sơ chế, vận chuyển và giao hàng đều được ghi lại từng khối (block) và liên kết với nhau. Dữ liệu bất biến này không thể bị sửa đổi, giúp truy xuất nguồn gốc minh bạch và tạo niềm tin vững chắc cho người mua.</p>
+            <div class="blockchain-list">
+              <div class="block">
+                <h4>Block 1: Thu hoạch</h4>
+                <p><strong>Thời gian:</strong> 15/10/2025&nbsp;08:00</p>
+                <p><strong>Địa điểm:</strong> Đà Lạt</p>
+                <p><strong>Thực hiện:</strong> Nông dân&nbsp;A</p>
+              </div>
+              <div class="block">
+                <h4>Block 2: Phân loại</h4>
+                <p><strong>Thời gian:</strong> 15/10/2025&nbsp;09:30</p>
+                <p><strong>Địa điểm:</strong> AgriHub&nbsp;Đà&nbsp;Lạt</p>
+                <p><strong>Thực hiện:</strong> Nhân viên&nbsp;AgriHub</p>
+              </div>
+              <div class="block">
+                <h4>Block 3: Sơ chế &amp; Đóng gói</h4>
+                <p><strong>Thời gian:</strong> 15/10/2025&nbsp;10:00</p>
+                <p><strong>Địa điểm:</strong> AgriHub&nbsp;Đà&nbsp;Lạt</p>
+                <p><strong>Thực hiện:</strong> Nhân viên&nbsp;AgriHub</p>
+              </div>
+              <div class="block">
+                <h4>Block 4: Vận chuyển</h4>
+                <p><strong>Thời gian:</strong> 15/10/2025&nbsp;16:00</p>
+                <p><strong>Địa điểm:</strong> Tuyến&nbsp;Đà&nbsp;Lạt&nbsp;–&nbsp;Bình&nbsp;Dương</p>
+                <p><strong>Đơn vị:</strong> Đối tác&nbsp;3PL</p>
+              </div>
+              <div class="block">
+                <h4>Block 5: Giao hàng</h4>
+                <p><strong>Thời gian:</strong> 15/10/2025&nbsp;20:00</p>
+                <p><strong>Địa điểm:</strong> KCN&nbsp;Bình&nbsp;Dương</p>
+                <p><strong>Người nhận:</strong> Bếp&nbsp;ăn&nbsp;Công&nbsp;ty&nbsp;X</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- IoT tab -->
+        <div id="iot" class="tab-pane">
+          <div class="tech-panel">
+            <h3>Giám sát chuỗi lạnh IoT</h3>
+            <p>Các cảm biến IoT được hiệu chuẩn đặt trong kho lạnh và trên xe vận chuyển giám sát 24/7 nhiệt&nbsp;độ, độ&nbsp;ẩm và các thông số môi trường quan trọng. Dữ liệu được cập nhật theo thời gian thực về trung tâm điều hành để cảnh báo kịp thời và điều chỉnh khi có biến động, đảm bảo nông sản luôn trong điều kiện tối ưu.</p>
+            <div class="sensor-grid">
+              <div class="sensor-card">
+                <i class="fa-solid fa-temperature-low"></i>
+                <h4>Kho lạnh – Nhiệt độ</h4>
+                <div class="sensor-value" id="sensor1">4°C</div>
+              </div>
+              <div class="sensor-card">
+                <i class="fa-solid fa-tint"></i>
+                <h4>Kho lạnh – Độ ẩm</h4>
+                <div class="sensor-value" id="sensor2">85%</div>
+              </div>
+              <div class="sensor-card">
+                <i class="fa-solid fa-temperature-arrow-down"></i>
+                <h4>Xe tải – Nhiệt độ</h4>
+                <div class="sensor-value" id="sensor3">2°C</div>
+              </div>
+              <div class="sensor-card">
+                <i class="fa-solid fa-droplet"></i>
+                <h4>Xe tải – Độ ẩm</h4>
+                <div class="sensor-value" id="sensor4">78%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Circular economy tab -->
+        <div id="circular" class="tab-pane">
+          <div class="tech-panel">
+            <h3>Kinh tế tuần hoàn</h3>
+            <p>Bên cạnh việc cung ứng nông sản chất lượng, Supportmart vận hành mô hình kinh tế tuần hoàn ngay tại AgriHub. Những sản phẩm không đạt chuẩn thương mại và phụ&nbsp;phẩm nông&nbsp;nghiệp được tận dụng làm thức ăn cho trùn quế. Sinh khối và phân trùn thu được được chế biến thành phân bón hữu cơ quay trở lại đồng&nbsp;ruộng, khép kín vòng tuần hoàn, giảm phát thải rác hữu cơ và tạo thêm dòng doanh thu.</p>
+            <div class="circular-steps">
+              <div class="circular-item">
+                <i class="fa-solid fa-carrot"></i>
+                <p>Nông sản loại&nbsp;C và phụ phẩm được gom về AgriHub</p>
+              </div>
+              <div class="circular-item">
+                <i class="fa-solid fa-worm"></i>
+                <p>Phụ phẩm làm thức ăn cho trùn quế, tạo ra sinh khối và phân trùn</p>
+              </div>
+              <div class="circular-item">
+                <i class="fa-solid fa-seedling"></i>
+                <p>Phân bón hữu cơ được cung cấp lại cho nông dân, khép kín vòng tuần hoàn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Supportmart. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
